@@ -51,3 +51,5 @@ elif znak == "y":
 
 else:
     print("введены некорректные файлы")
+
+print("hello")
