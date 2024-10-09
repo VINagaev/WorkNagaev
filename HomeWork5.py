@@ -61,6 +61,7 @@
 #     print("Number is equal to zero")
 
 # Задание 4
+#Вариант 1
 
 a = float(input("введите число a: "))
 b = float(input("введите число b: "))
@@ -69,3 +70,4 @@ if a == b:
 else:
     print("Минимальное число: " , min([a, b]))
     print("Максимальное число: ", max([a, b]))
+
