@@ -145,9 +145,9 @@ import re
 # print(numbers)
 
 # сортировка реверс
-string = input().split(" ")
-numbers=[]
-for i in string:
-    numbers.append(int(i))
-    numbers.sort(reverse=True)
-print(numbers)
+# string = input().split(" ")
+# numbers=[]
+# for i in string:
+#     numbers.append(int(i))
+#     numbers.sort(reverse=True)
+# print(numbers)
