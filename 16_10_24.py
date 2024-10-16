@@ -99,3 +99,4 @@ for number in range(begin, end + 1):
         result += "Fizz Buzz" + str(number) + ", "
     else:
         result += "Число: " + str(number) + ", "
+print(result)
