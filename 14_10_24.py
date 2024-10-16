@@ -1,4 +1,5 @@
 #Работа в классе
+from test4 import string
 
 # Zadanie 1
 
@@ -68,39 +69,59 @@
 
 #Zadanie 4
 
-string = input("Введите уровень продаж менеджеров через пробел: ").split(" ")
-base = 200 #базовая ставка 200$
-percent = 0
-prem = 0
-status = 0
-if int(string[0]) > int(string[1]) > int(string[2]) or int(string[0]) > int(string[2]) > int(string[1]):
-    status = 0
-    print("Премия 200$ начислена менеджеру №:", status+1)
-if int(string[1]) > int(string[2]) > int(string[0]) or int(string[1]) > int(string[0]) > int(string[2]):
-    status = 1
-    print("Премия 200$ начислена менеджеру №:", status+1)
-if int(string[2]) > int(string[1]) > int(string[0]) or int(string[2]) > int(string[0]) > int(string[1]):
-    status = 2
-    print("Премия 200$ начислена менеджеру №:", status+1)
-    print(status)
-k = 0
-for i in string:
-    zp = int(i)
-    if 0 < zp < 500:
-        percent = 0.03
-    elif 500 <= zp < 1000:
-        percent = 0.05
-    elif zp >= 1000:
-        percent = 0.08
-    if k == status:
-        prem += 200
-        print("Зарплата менеджера №",k+1, ": ", base * (1 + percent) + prem)
-    else:
-        print("Зарплата менеджера №",k+1, ": ", base * (1 + percent))
-    k += 1
+# string = input("Введите уровень продаж менеджеров через пробел: ").split(" ")
+# base = 200 #базовая ставка 200$
+# percent = 0
+# prem = 0
+# status = 0
+# if int(string[0]) > int(string[1]) > int(string[2]) or int(string[0]) > int(string[2]) > int(string[1]):
+#     status = 0
+#     print("Премия 200$ начислена менеджеру №:", status+1)
+# if int(string[1]) > int(string[2]) > int(string[0]) or int(string[1]) > int(string[0]) > int(string[2]):
+#     status = 1
+#     print("Премия 200$ начислена менеджеру №:", status+1)
+# if int(string[2]) > int(string[1]) > int(string[0]) or int(string[2]) > int(string[0]) > int(string[1]):
+#     status = 2
+#     print("Премия 200$ начислена менеджеру №:", status+1)
+#     print(status)
+# k = 0
+# for i in string:
+#     zp = int(i)
+#     if 0 < zp < 500:
+#         percent = 0.03
+#     elif 500 <= zp < 1000:
+#         percent = 0.05
+#     elif zp >= 1000:
+#         percent = 0.08
+#     if k == status:
+#         prem += 200
+#         print("Зарплата менеджера №",k+1, ": ", base * (1 + percent) + prem)
+#     else:
+#         print("Зарплата менеджера №",k+1, ": ", base * (1 + percent))
+#     k += 1
 
 
 # for i in string:
 #     zp_all.append(int(i))
 # zp_all.sort(reverse=True)
 # print(zp_all[0])
+
+
+# Задание 4
+string = input().split(" ")
+number = []
+zp = 200
+print(string)
+for i in string:
+    volume = int(i)
+    print(volume)
+    if 0 < volume <500:
+        zp *= 1.03
+    elif 500 <= zp <= 1000:
+        zp *= 1.05
+    elif volume > 1000:
+        zp *= 1.08
+    print(zp)
+    number.append(zp)
+    print(number)
+    print(max(number))
