@@ -1,5 +1,4 @@
 #Работа в классе
-from test4 import string
 
 # Zadanie 1
 
