@@ -1,4 +1,5 @@
 #Работа в классе 23.10.24
+import time
 
 # customers=['Bob','Anna','Joe','Bill','Nick']
 # # print(customers[2:4])
@@ -63,8 +64,13 @@
 
 # задание 1 дз 10
 
+import time
+from datetime import datetime
+
 string = input().split(" ")
 numbers = []
+start_time = datetime.today()
+print(start_time)
 for i in range(int(string[0]), int(string[1])):
     count = 0
     j = 1
@@ -74,4 +80,7 @@ for i in range(int(string[0]), int(string[1])):
         j += 1
     if count == 2:
         numbers.append(i)
+end_time = datetime.today()
+delta = end_time - start_time
 print("простые числа: ", numbers)
+print ("время выполнения:", delta)
