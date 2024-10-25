@@ -13,6 +13,13 @@
 # proiz = int(string[0]) * int(string[1]) * int(string[2]) * int(string[3])
 # print("Произведение чисел:" , proiz)
 
+# Вариант 2
+# string = input("введите 4 числа: ")
+# result = ""
+# for i in string:
+#     result *= int(string[i])
+# print(result)
+
 #Задание 3
 
 # string = float(input("Введите количество метров: "))
