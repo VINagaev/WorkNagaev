@@ -24,8 +24,8 @@
 
 #Задание 3
 
-start = int(input('Введите начальное значение: '))
-end = int(input('Введите конечное значение: '))
+start = int(input("Введите начальное значение: "))
+end = int(input("Введите конечное значение: "))
 for i in range(start, end + 1):
     for j in range(1, 11):
         result = i * j
