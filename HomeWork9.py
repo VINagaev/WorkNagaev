@@ -10,40 +10,18 @@
 #Задание 2
 
 # s = input().split(" ")
-# res = []
-# for i in range(int(s[0]),int(s[1])):
-#     e = str(i)
-#     numbers = []
-#     for j in e:
-#         numbers.append(str(j))
-#     count = 0
-#     for x in numbers:
-#         if numbers[0] ==x:
-#             count +=1
-#         if count == 2:
-#                 res.append(i)
-#                 break
-# print(res)
-# print(len(res))
+# numbers = []
+# for i in range(int(s[0]), int(s[1]) + 1):
+#     num = []
+#     for x in str(i):
+#         num.append(x)
+#     for j in range(10):
+#         if num.count(str(j)) == 2:
+#             numbers.append(i)
+# print(numbers)
+# print(len(numbers))
 
-# s = input().split(" ")
-# res = []
-# for i in range(int(s[0]),int(s[1])):
-#     e = str(i)
-#     numbers = []
-#     for j in e:
-#         numbers.append(str(j))
-#     count = 0
-#     k = 0
-#     while k < len(numbers):
-#         if numbers[0] == numbers [k]:
-#             count += 1
-#             if count == 2:
-#                 res.append(i)
-#                 break
-#             k += 1
-# print(res)
-# print(len(res))
+
 
 #Задание 3
 
@@ -57,19 +35,24 @@
 
 #Задание 4
 
+s = input()
+
+num = ""
+for i in s:
+    if i != "3" and i != "6":
+        num += i
+print(int(num))
 
 
 
 
 
-
-
-count = 0
-for i in range(100, 1000):
-    num = str(i)
-    if num[0] == num[1] or num[0] == num[2] or num[1] == num[2]:
-        count += 1
-print(count)
+# count = 0
+# for i in range(100, 1000):
+#     num = str(i)
+#     if num[0] == num[1] or num[0] == num[2] or num[1] == num[2]:
+#         count += 1
+# print(count)
 
 
 
