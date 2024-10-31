@@ -1,4 +1,4 @@
-#Домашнее задание "Циклы". часть 3"
+#Домашнее задание "Циклы". Часть 3
 
 #Задание 1
 
@@ -18,25 +18,26 @@
 #     for j in range(10):
 #         if num.count(str(j)) == 2:
 #             numbers.append(i)
-# print(numbers)
 # print(len(numbers))
-
+# print(numbers)
 
 
 #Задание 3
 
 # s = input().split(" ")
+# numbers = []
 # count = 0
-# for num in range(int(s[0]),int(s[1])):
-#     if len(set(str(num))) == len(str(num)):
+# for i in range(int(s[0]),int(s[1]) +1):
+#     if len(set(str(i))) == len(str(i)):
+#         numbers.append(i)
 #         count += 1
 # print(count+1)
+# print(numbers)
 
 
 #Задание 4
 
 s = input()
-
 num = ""
 for i in s:
     if i != "3" and i != "6":
@@ -47,33 +48,4 @@ print(int(num))
 
 
 
-# count = 0
-# for i in range(100, 1000):
-#     num = str(i)
-#     if num[0] == num[1] or num[0] == num[2] or num[1] == num[2]:
-#         count += 1
-# print(count)
-
-
-
-
-
-
-
-# s = input().split(" ")
-# res = []
-# for i in range(int(s[0]),int(s[1])):
-#     e = str(i)
-#     numbers = []
-#     for j in e:
-#         numbers.append(str(j))
-#     count = 0
-#     for x in numbers:
-#         if numbers[0] ==x:
-#             count +=1
-#         if count == 2:
-#                 res.append(i)
-#                 break
-# print(res)
-# print(len(res))
 
