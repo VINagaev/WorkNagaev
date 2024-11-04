@@ -40,12 +40,42 @@ from numpy.linalg.lapack_lite import xerbla
 
 
 
-sp = [-1, -2, -4, -5, 0, 3, 5, 6, 63, 4]
-pos = 0
-neg = 0
-nul = 0
-for x in sp:
-    try:
-        print(s / x)
-    except:
-print("delenie na 0")
+# sp = [-1, -2, -4, -5, 0, 3, 5, 6, 63, 4]
+# pos = 0
+# neg = 0
+# nul = 0
+# for x in sp:
+#     try:
+#         print(s / x)
+#     except:
+# print("delenie na 0")
+
+
+#ДЗ 13 задание 1
+import re
+# s = input()
+# op = re.findall(r'[(+*]', s)
+# print(op)
+# num = re.split(r'[(+*]', s)
+# if op[0] == '+':
+#     print(int(num[0]) + int(num[1]))
+# elif op[0] == '-':
+#     print(int(num[0]) - int(num[1]))
+# elif op[0] == '*':
+#     print(int(num[0]) * int(num[1]))
+# elif op[0] == '/':
+#     print(int(num[0]) / int(num[1]))
+
+s = input()
+op = re.findall(r'[(\-/\+*)]', s)
+print(op)
+num = re.split(r'[(\-/\+*)]', s)
+print(num)
+j=1
+res=0
+while j < len(op):
+    for y in op:
+        if y == "+":
+            res = num[j-1] + num[j]
+    j += 1
+print(res)
