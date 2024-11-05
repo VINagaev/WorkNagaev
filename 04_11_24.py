@@ -5,7 +5,7 @@
 #     print(" "*20, "|", "*" * i if i <= 20 else "*" * (40 - i), " " * (40 - i) if i <=20 else " " * i, "|")
 #     i+=1
 # print(' ' * 20, '_' * 45)
-from numpy.linalg.lapack_lite import xerbla
+
 
 #E
 
@@ -66,16 +66,16 @@ import re
 # elif op[0] == '/':
 #     print(int(num[0]) / int(num[1]))
 
-s = input()
-op = re.findall(r'[(\-/\+*)]', s)
-print(op)
-num = re.split(r'[(\-/\+*)]', s)
-print(num)
-j=1
-res=0
-while j < len(op):
-    for y in op:
-        if y == "+":
-            res = num[j-1] + num[j]
-    j += 1
-print(res)
+# s = input()
+# op = re.findall(r'[(\-/\+*)]', s)
+# print(op)
+# num = re.split(r'[(\-/\+*)]', s)
+# print(num)
+# j=1
+# res=0
+# while j < len(op):
+#     for y in op:
+#         if y == "+":
+#             res = num[j-1] + num[j]
+#     j += 1
+# print(res)
