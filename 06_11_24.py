@@ -1,7 +1,3 @@
-# def test13():
-#     print("OK")
-# test13(
-
 import re
 s = input()
 result = eval(s)
